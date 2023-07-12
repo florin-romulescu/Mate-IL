@@ -1,0 +1,25 @@
+{
+  "name": "mate",
+  "version": "0.0.1",
+  "description": "Site de matematica",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Mate-IL"
+  },
+  "keywords": [
+    "Matematica",
+    "exercitii",
+    "evenimente",
+    "probleme",
+    "teste"
+  ],
+  "author": "Horia Enescu, Florin Romulescu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
