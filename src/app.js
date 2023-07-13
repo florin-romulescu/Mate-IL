@@ -4,8 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const { error } = require('console');
 
 var app = express();
 
@@ -33,9 +35,25 @@ app.use(function(err, req, res, next) {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
+  var errorMessage = ""
+  switch (err.status) {
+    case 404:
+      errorMessage = "Pagina nu a fost gasita";
+      break;
+    case 403:
+      errorMessage = "Access interzis";
+      break;
+    default:
+      errorMessage = "Eroare la server";
+      break;
+  }
+
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('error', {
+    errorCode: err.status || 500,
+    errorMessage: errorMessage
+  });
 });
 
 module.exports = app;
