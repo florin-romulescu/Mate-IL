@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     .sidebar {
       position: fixed;
@@ -11,21 +10,20 @@
       left: 0;
       width: 250px;
       height: 100%;
-      background-color: #f8f9fa;
+      background-color: #1e1e1e;
       transition: all 0.3s ease-in-out;
     }
 
-    .sidebar.collapsed {
-      width: 80px;
+    .sidebar.hidden {
+      transform: translateX(-100%);
     }
 
     .content {
-      margin-left: 250px;
       transition: all 0.3s ease-in-out;
     }
 
-    .content.collapsed {
-      margin-left: 80px;
+    .content.full-width {
+      margin-left: 0;
     }
 
     .toggle-btn {
@@ -38,27 +36,35 @@
       transition: all 0.3s ease-in-out;
     }
 
-    .toggle-btn.collapsed {
-      right: -30px;
+    @media (max-width: 576px) {
+      .sidebar {
+        width: 100%;
+      }
+
+      .content {
+        margin-left: 0;
+      }
     }
-  </style>
+  </style>d
 </head>
 <body>
-    <h1><%= title %></h1>
   <div class="sidebar">
-    <div class="toggle-btn">Button</div>
+    <div class="container" style="background-color: #f8f9fa;"></div>
   </div>
+  
+
   <div class="content">
+    <div class="toggle-btn">Button</div>
     <!-- Your page content goes here -->
+    <h1><%= title %></h1>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
       $('.toggle-btn').click(function() {
-        $('.sidebar').toggleClass('collapsed');
-        $('.content').toggleClass('collapsed');
-        $(this).toggleClass('collapsed');
+        $('.sidebar').toggleClass('hidden');
+        // $('.content').toggleClass('full-width');
       });
     });
   </script>
