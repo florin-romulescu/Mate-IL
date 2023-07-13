@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100%;
+      background-color: #f8f9fa;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .sidebar.collapsed {
+      width: 80px;
+    }
+
+    .content {
+      margin-left: 250px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .content.collapsed {
+      margin-left: 80px;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 10px;
+      background-color: #f8f9fa;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .toggle-btn.collapsed {
+      right: -30px;
+    }
+  </style>
+</head>
+<body>
+    <h1><%= title %></h1>
+  <div class="sidebar">
+    <div class="toggle-btn">Button</div>
+  </div>
+  <div class="content">
+    <!-- Your page content goes here -->
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.toggle-btn').click(function() {
+        $('.sidebar').toggleClass('collapsed');
+        $('.content').toggleClass('collapsed');
+        $(this).toggleClass('collapsed');
+      });
+    });
+  </script>
+</body>
+</html>
