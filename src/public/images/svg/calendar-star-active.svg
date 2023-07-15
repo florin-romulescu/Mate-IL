@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="transparent"></rect>
+<g transform="matrix(1 0 0 1 540 540)" id="b09a88ef-4cfd-432f-a477-8ba358cc606d"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+</g>
+<g transform="matrix(1 0 0 1 540 540)" id="46e0c423-4b88-4edd-9509-2866617cce39"  >
+</g>
+<g transform="matrix(NaN NaN NaN NaN 0 0)"  >
+<g style=""   >
+</g>
+</g>
+<g transform="matrix(44.86 0 0 44.86 540 522.85)" id="ea802931-0672-43e8-82b5-d8d4a810be5d"  >
+<path style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(249,249,249); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-12, -12)" d="M 19 2 L 18 2 L 18 1 C 18 0.44799999999999995 17.552 0 17 0 C 16.448 0 16 0.448 16 1 L 16 2 L 8 2 L 8 1 C 8 0.44799999999999995 7.552 0 7 0 C 6.448 0 6 0.448 6 1 L 6 2 L 5 2 C 2.243 2 0 4.243 0 7 L 0 19 C 0 21.757 2.243 24 5 24 L 19 24 C 21.757 24 24 21.757 24 19 L 24 7 C 24 4.243 21.757 2 19 2 Z M 5 4 L 19 4 C 20.654 4 22 5.346 22 7 L 22 8 L 2 8 L 2 7 C 2 5.346 3.346 4 5 4 Z M 19 22 L 5 22 C 3.346 22 2 20.654 2 19 L 2 10 L 22 10 L 22 19 C 22 20.654 20.654 22 19 22 Z M 16.397 15.352 C 16.397 15.731 16.133 16.05 15.830999999999998 16.218 L 14.266999999999998 17.088 L 14.960999999999999 18.981 C 15.094999999999999 19.348000000000003 14.973999999999998 19.759 14.661999999999999 19.994 L 14.661999999999999 19.994 C 14.342999999999998 20.233999999999998 13.902999999999999 20.230999999999998 13.587 19.987 L 12.030999999999999 18.784 L 10.474999999999998 19.987 C 10.158999999999997 20.230999999999998 9.718999999999998 20.233999999999998 9.399999999999999 19.994 L 9.399999999999999 19.994 C 9.088 19.759 8.966999999999999 19.348 9.100999999999999 18.981 L 9.794999999999998 17.088 L 8.230999999999998 16.218 C 7.9289999999999985 16.05 7.664999999999998 15.731 7.664999999999998 15.352 C 7.664999999999998 15.031 7.943999999999998 14.676 8.395999999999999 14.676 L 10.642999999999999 14.676 L 11.238999999999999 12.393 C 11.332999999999998 12.031 11.658 11.779 12.030999999999999 11.772 C 12.403999999999998 11.779 12.729 12.031 12.822999999999999 12.393 L 13.418999999999999 14.676 L 15.665999999999999 14.676 C 16.118 14.676 16.397 15.03 16.397 15.352 Z" stroke-linecap="round" />
+</g>
+</svg>
