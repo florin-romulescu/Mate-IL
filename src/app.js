@@ -35,7 +35,7 @@ app.use(function(err, req, res, next) {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  var errorMessage = ""
+  var errorMessage = "";
   switch (err.status) {
     case 404:
       errorMessage = "Pagina nu a fost gasita";
