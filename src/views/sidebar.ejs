@@ -1,3 +1,13 @@
+<!--
+  Send the next parameters to the page to set the side buttons active:
+    - evenimente: for the Evenimente page's button
+    - fiseDeLucru: for the Fise de Lucru page's button
+    - test: for the Teste page's button
+    - concursuri: for the Concursuri page's button
+    - contact: for the Contact page's button
+  We test if the parameter is defined so it will work with any value you give it.
+-->
+
 <div class="sidebar container-fluid">
     <div class="container-fluid my-3 mx-2">
       <div class="row">
@@ -26,18 +36,18 @@
             </div>
             <% } %>
             <% if (typeof fiseDeLucru !== 'undefined') { %>
-            <div class="tab row container-fluid clickable" onclick="redirect('/FiseDeLucru')">
+            <div class="tab row container-fluid clickable active" onclick="redirect('/FiseDeLucru')">
               <img class="col" src="images/svg/file-invoice.svg" alt="file-invoice" width="26" height="26">
               <div class="col-8">Fise de lucru</div>
             </div>
             <% } else { %>
-              <div class="tab row container-fluid clickable" onclick="redirect('/FiseDeLucru')">
+              <div class="tab row container-fluid clickable" onclick="redirect('/fise-de-lucru')">
                 <img class="col" src="images/svg/file-invoice.svg" alt="file-invoice" width="26" height="26">
                 <div class="col-8">Fise de lucru</div>
               </div>
               <% } %>
             <% if (typeof teste !== 'undefined') { %>
-            <div class="tab row container-fluid clickable" onclick="redirect('/Teste')">
+            <div class="tab row container-fluid clickable active" onclick="redirect('/Teste')">
               <img class="col" src="images/svg/square-root.svg" alt="square-root" width="26" height="26">
               <div class="col-8">Teste</div>
             </div>
@@ -48,7 +58,7 @@
               </div>
               <% } %>
               <% if (typeof concursuri !== 'undefined') { %>
-            <div class="tab row container-fluid clickable" onclick="redirect('/Concursuri')" >
+            <div class="tab row container-fluid clickable active" onclick="redirect('/Concursuri')" >
               <img class="col" src="images/svg/badge.svg" alt="badge" width="26" height="26">
               <div class="col-8">Concursuri</div>
             </div>
@@ -60,7 +70,7 @@
               <% } %>
             <hr style="border: 2px solid; border-radius: 10px; margin-top: 0.7rem;">
             <% if (typeof contact !== 'undefined') { %>
-            <div class="tab row container-fluid clickable" onclick="redirect('/Contact')">
+            <div class="tab row container-fluid clickable active" onclick="redirect('/Contact')">
               <img class="col" src="images/svg/headset.svg" alt="headset" width="26" height="26">
               <div class="col-8">Contact</div>
             </div>
