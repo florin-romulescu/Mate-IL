@@ -1,0 +1,6 @@
+/*This is the class for the navbar. Need to import bootstrap for full functionality.*/
+
+#navbar {
+    z-index: 100;
+    background-color: #ffffff;
+}
