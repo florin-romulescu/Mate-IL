@@ -1,0 +1,10 @@
+div#searchbar {
+    border: 3px solid #345995;
+    border-radius: 10px;
+}
+
+div#searchbar > input {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+}
