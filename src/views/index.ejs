@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="stylesheets/searchbar.css">
 </head>
 <body>
-  <%- include('navbar.ejs') %>
-  <%- include('sidebar.ejs') %>
+  <%- include('components/navbar.ejs') %>
+  <%- include('components/sidebar.ejs') %>
 
   <div class="content pt-5 container">
-    <%- include('searchbar.ejs') %>
+    <%- include('components/searchbar.ejs') %>
     <!-- Your page content goes here -->
     <% for (var i = 0; i < 20; ++i) { %>
       <h1><%= title %></h1>
