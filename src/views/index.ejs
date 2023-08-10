@@ -17,7 +17,7 @@
     <%- include('components/searchbar.ejs') %>
     <!-- Your page content goes here -->
     <% for (var i = 0; i < 20; ++i) { %>
-      <h1><%= title %></h1>
+      <%- include('components/content-card.ejs') %>
     <% } %>
   </div>
 
